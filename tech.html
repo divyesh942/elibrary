@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library</title>
+    <style>
+         body{
+            margin: 0px;
+        }
+        li {
+            float: left
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 4px 16px;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0%;
+            padding: 10px;
+            overflow: hidden;
+            background-color: #333;
+            font-size: 28px;
+            font-weight: 400;
+            align-content: center;
+            width: auto;
+
+        }
+
+        li a:hover {
+            background-color: black;
+            color: rgb(41, 255, 13);
+        }
+
+        #home:hover {
+            background-color: black;
+        }
+
+        #home:active {
+            background-color: black;
+            color: rgb(171, 162, 153);
+            font-size: 25.4px;
+        }
+
+        #history:hover {
+            background-color: black;
+            color: rgb(255, 134, 13);
+        }
+
+        #motivation:hover {
+            background-color: black;
+            color: rgb(13, 21, 255);
+        }
+
+        #study:hover {
+            background-color: black;
+            color: rgb(13, 235, 255);
+        }
+
+        #relig:hover {
+            background-color: black;
+            color: rgb(255, 13, 98);
+        }
+
+        #contact:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(124, 195, 170);
+        }
+
+        #about:hover {
+            background-color: black;
+            color: rgb(225, 158, 90);
+        }
+
+        #about:active {
+            background-color: black;
+            color: rgb(171, 162, 153);
+            font-size: 25.4px;
+        }
+
+        #tech:hover {
+            background-color: black;
+            color: rgb(244, 240, 12);
+        }
+
+        #tech:active {
+            background-color: black;
+            color: rgb(246, 255, 0);
+            font-size: 25.4px;
+        }
+        #tech:visited {
+            background-color: rgb(0, 0, 0);
+            color: rgb(246, 255, 0);
+            font-size: 25.4px;
+        }
+
+        #history:active {
+            background-color: black;
+            color: rgb(171, 162, 153);
+            font-size: 25.4px;
+        }
+
+        #motivation:active {
+            background-color: black;
+            color: rgb(171, 162, 153);
+            font-size: 25.4px;
+        }
+
+        #study:active {
+            background-color: black;
+            color: rgb(171, 162, 153);
+            font-size: 25.4px;
+        }
+
+        #relig:active {
+            background-color: black;
+            color: rgb(171, 162, 153);
+            font-size: 25.4px;
+        }
+
+        #contact:active {
+            background-color: rgb(0, 0, 0);
+            color: rgb(171, 162, 153);
+            font-size: 25.4px;
+        }
+
+        #heading {
+            text-align: center;
+            font-size: 5vw;
+            font-weight: 200;
+            color: rgb(25, 23, 23);
+            border: 5px solid #151010;
+            border-radius: 0vw;
+            padding: 95px;
+            background-color: rgb(144, 247, 247);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .shadow {
+            box-shadow: rgb(166, 166, 169) 10px 10px 10px;
+            text-shadow: rgb(218, 165, 165) 0px 0px 7px;
+
+        }
+        @media screen and (min-length:200px) {
+            ul {
+            list-style-type:none;
+            margin: 0%;
+            padding: 10px;
+            overflow: hidden;
+            background-color: rgb(215, 110, 110);
+            font-size: 28px;
+            font-weight: 400;
+            align-content: center;
+            width: auto;
+             display: block;
+          }
+        }
+   .background{
+       background-image: url("images/tech.jpg");
+       width: auto;
+       height: 400px;
+       opacity: 0.96;
+      
+    }
+    #textheading {
+        text-align:center;
+       color: rgb(255, 61, 61);
+       font-size: 100px;
+       padding-top: 80px;
+       font-weight:bolder;
+       font-style: oblique;
+       text-shadow: rgb(0, 0, 0) 6px 4px 8px;
+ 
+        
+    }
+    #border{
+        border:8px rgb(255, 233, 93);
+        border-style:double;
+        border-radius: 6px;
+        border-bottom:8px double #34ff6e;
+        border-right:8px double #3fff76;
+        margin-top: 10px;
+        margin-bottom: 70px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding: 30px;
+    }
+    #books{
+            font-size: 50px;
+            text-align:center;
+            background-color: rgb(230, 224, 216);
+            padding: 25px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 600;
+            color: rgb(39, 39, 54);
+            border-bottom: 2px solid black;
+            border-bottom-width: 5px;
+            border-bottom-style: dotted;
+            margin-bottom: 20px;
+        }
+        #main1{
+   margin-top: -20px;
+   padding: 50px;
+       background-color: rgb(224, 249, 240);
+       border-bottom: 2px solid black;
+    
+}
+
+#first{
+    
+    height:20px;
+    width:fit-content;
+    display:inline-block;
+}
+#two{
+      
+       width:fit-content;
+    display:inline-block;
+}
+#third{
+            
+    
+       width:fit-content;
+    display:inline-block;     
+}
+#main2{
+   margin-top: -20px;
+   padding: 50px;
+       background-color: rgb(224, 249, 240);
+       border-bottom: 2px solid black;
+    
+}
+#main3{
+   margin-top: -20px;
+   padding: 50px;
+       background-color: rgb(224, 249, 240);
+       border-bottom: 2px solid black;
+    
+}
+#main4{
+   margin-top: 20px;
+   padding: 30px;
+       background-color: rgb(224, 249, 240);
+       border-bottom: 2px solid black;
+    
+}
+#r21{
+    
+    height:20px;
+    width:fit-content;
+    display:inline-block;
+}
+#r22{
+      
+       width:fit-content;
+    display:inline-block;
+}
+#r23{
+            
+    
+       width:fit-content;
+    display:inline-block;     
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#main1 {
+    font-size: 20px;
+    color:#4e0d0d;
+   
+}
+#main2 {
+    font-size: 20px;
+    color:#4e0d0d;
+}
+#main3 {
+    font-size: 20px;
+    color:#4e0d0d;
+}
+#main4 {
+    font-size: 20px;
+    color:#4e0d0d;
+}
+button{
+    background-color: #151010;
+    color: aliceblue;
+    border-radius: 6px;
+}
+button:hover{
+   background-color: #333;
+  
+}
+button:active{
+    font-size: 70px;
+}
+#border2{
+    border-bottom: 4px dashed rgb(46, 44, 44);
+    margin-top: 40px;
+    margin-left: 40px;
+}
+ img:hover {
+   opacity: 0.7;
+}
+
+       
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html" id="home">Home</a></li>
+        <li><a href="history.html" id="history">History</a></li>
+        <li><a href="motivation.html" id="motivation">Motivational</a></li>
+        <li><a href="study.html" id="study">Study</a></li>
+        <li><a href="religious.html" id="relig">Religious</a></li>
+        <li><a href="tech.html" id="tech">Tech</a></li>
+        <li style="margin-left: 340px;"><a href="contact.html" id="contact">Contact us</a></li>
+        <li><a href="about.html" id="about">About</a></li>
+    </ul>
+    
+    <div class="background">
+        <div id="textheading">
+            <div id="border">
+            Technology
+        </div>
+    </div>
+  </div>
+  <div id="main1">
+    <div id="first">
+         <img src="images/t1r1b1.png" style="height:300px; margin-left: 150px">
+         <p style="font-size: larger;margin-left: 200px;">cryptography</p>
+         <button type="button" style="font-size:large;margin-left: 200px;">Buy now</button>
+         <button type="button" style="font-size: large;"> <a href="pdf/h1d1b3.pdf" target="_blank">view</a></button>
+    </div>
+    <div id="two">
+        <img src="images/t1r1b2.jpg" style="height:300px; margin-left: 200px;">
+        <p style="font-size: larger;margin-left:230px;">Data science</p>
+        <button type="button" style="font-size:large; margin-left: 330px;"> <a href="h1d1b6.pdf" target="_blank"></a>view</a></button>
+        <button type="button" style="font-size:large;margin-left: -150px;">Buy now</button>
+    </div>
+    <div id="third">
+        <img src="images/t1r1b3.jpg" style="height:300px; margin-left: 200px;">
+        <p style="font-size: larger;margin-left: 260px;">IOT security</p>
+        <button type="button" style="font-size:large; margin-left: 310px;"  ><a href="h1d1b1.pdf" target="_blank">view</a></button>
+        <button type="button" style="font-size:large;margin-left: -150px;">Buy now</button>
+    </div>
+    <div id="border2">
+
+    </div>
+</div>  
+
+<div id="main2">
+    <div id="r21">
+         <img src="images/t1r2b1.jpg" style="height:300px; margin-left: 150px">
+         <p style="font-size: larger;margin-left: 200px;">Maths of Programming</p>
+         <button type="button" style="font-size:large;margin-left: 200px;">Buy now</button>
+         <button type="button" style="font-size: large;"> <a href="pdf/h1d2b2.pdf" target="_blank">view</a></button>
+    </div>
+    <div id="r22">
+        <img src="images/t1r2b2.jpg" style="height:300px; margin-left: 200px;">
+        <p style="font-size: larger;margin-left:230px;">Machine Learnin</p>
+        <button type="button" style="font-size:large; margin-left: 330px;"><a href="h1d2b5.pdf" target="_blank">view</a></button>
+        <button type="button" style="font-size:large;margin-left: -150px;">Buy now</button>
+    </div>
+    <!-- <div id="border2">
+
+    </div> -->
+    <!-- <div id="r23">
+        <img src="images/t1r2b2.jpg" style="height:300px; margin-left: 390px; margin-top: 50px;">
+        <p style="font-size: larger;margin-left: 510px;">Revolt of 1857</p>
+        <button type="button" style="font-size:large; margin-left: 600px;"><a href="h1d2b5.pdf" target="_blank">view</a></button>
+        <button type="button" style="font-size:large;margin-left: -150px;">Buy now</button>
+    </div> -->
+    <div id="border2">
+
+    </div>
+    
+</div>  
+
+<div id="main3">
+    <div id="first">
+         <img src="images/h1b1.jpeg" style="height:300px; margin-left: 150px">
+         <p style="font-size: larger;margin-left: 200px;">Sardar patel</p>
+         <button type="button" style="font-size:large;margin-left: 200px;">Buy now</button>
+         <button type="button" style="font-size: large;"> <a href="pdf/h1d1b3.pdf" target="_blank">view</a></button>
+    </div>
+    <div id="two">
+        <img src="images/h1b2.jpeg" style="height:300px; margin-left: 200px;">
+        <p style="font-size: larger;margin-left:230px;">Bal gangadhar Tilak</p>
+        <button type="button" style="font-size:large; margin-left: 330px;"> <a href="h1d1b6.pdf" target="_blank"></a>view</a></button>
+        <button type="button" style="font-size:large;margin-left: -150px;">Buy now</button>
+    </div>
+    <div id="third">
+        <img src="images/h1b3.jpg" style="height:300px; margin-left: 200px;">
+        <p style="font-size: larger;margin-left: 260px;">Gandhiji</p>
+        <button type="button" style="font-size:large; margin-left: 310px;"  ><a href="h1d1b1.pdf" target="_blank">view</a></button>
+        <button type="button" style="font-size:large;margin-left: -150px;">Buy now</button>
+    </div>
+
+    <div id="border2">
+
+    </div>
+    
+    <div id="main4">
+        <div id="first">
+             <img src="images/h1b1.jpeg" style="height:300px; margin-left: 150px">
+             <p style="font-size: larger;margin-left: 200px;">Sardar patel</p>
+             <button type="button" style="font-size:large;margin-left: 200px;">Buy now</button>
+             <button type="button" style="font-size: large;"> <a href="h1d1b3.pdf" target="_blank">view</a></button>
+        </div>
+        <div id="two">
+            <img src="images/h1b2.jpeg" style="height:300px; margin-left: 200px;">
+            <p style="font-size: larger;margin-left:230px;">Bal gangadhar Tilak</p>
+            <button type="button" style="font-size:large; margin-left: 330px;"> <a href="h1d1b1.pdf" target="_blank">view</a></button>
+            <button type="button" style="font-size:large;margin-left: -150px;">Buy now</button>
+        </div>
+        <div id="third">
+            <img src="images/h1b3.jpg" style="height:300px; margin-left: 120px;">
+            <p style="font-size: larger;margin-left: 260px;">Gandhiji</p>
+            <button type="button" style="font-size:large; margin-left: 310px;"  ><a href="h1d1b1.pdf" target="_blank">view</a></button>
+            <button type="button" style="font-size:large;margin-left: -150px;">Buy now</button>
+        </div>
+
+
+</body>
+
+</html>
